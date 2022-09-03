@@ -1,0 +1,207 @@
+body{
+    background: linear-gradient(180deg, rgb(255, 255, 255) 0%, rgb(19, 28, 73) 35%, rgb(255, 255, 255) 100%);
+    background-attachment: fixed;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+.navbarBrandText{
+    font-size: xx-large;
+    font-style: oblique;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 20px;
+}
+
+.logoBrand{
+    box-shadow: 0px 0px 3px 3px rgb(67, 80, 150);
+}
+.navbar-nav .nav-link{
+    display: inline;
+    font-weight: bolder;
+    font-style: oblique;
+    font-size: large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    max-width: 1000px;
+    width: 300px;
+
+
+
+    transition: all 0.5s;
+}
+
+
+
+
+.nav-link:hover{
+  text-decoration: underline;
+  font-size: x-large;
+
+  color: rgb(22, 42, 192);
+  text-shadow: 1px 1px 0 rgb(94, 94, 94), 1px 1px 0 rgb(94, 94, 94), 1px 1px 0 rgb(94, 94, 94), 1px 1px 0 rgb(94, 94, 94);
+  box-shadow: 0px 0px 1px 2px rgba(39, 57, 217, 0.178);
+
+}
+/*! navbar css code */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.dropbtn {
+    background-color: #fdfdfd;
+    border-style: 2px 2px solid rgb(8, 8, 56);
+    color: rgb(31, 14, 73);
+    padding: 16px;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    border: none;
+
+    margin-left: 100px;
+
+    width: 200px;
+    padding: 10px 5px;
+    border-radius: 60px;
+
+
+  }
+
+
+  .dropdown {
+    display: inline;
+  }
+
+  .dropbtn{
+    background-color: rgb(15, 15, 77);
+    color: #fdfdfd;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    margin-left: 30px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+  }
+
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #1d39858d;}
+
+/*! navbar css code */
+
+
+
+
+
+
+
+  
+  .banner img{
+    background-repeat: no-repeat;
+    width:  100%;
+    height: 400px; 
+    margin: 0;  
+    padding: 0;
+    box-shadow: 0px 0px 3px 2px rgb(9, 7, 7);
+    position: fixed;
+}
+
+
+ .formContainer{
+    display: flexbox;
+    position: fixed;
+    background-color: rgba(180, 182, 183, 0.275);
+    height: 400px; 
+    flex-wrap: wrap;
+ }
+
+ .form-floating, .curve-button{
+    margin-left: 30px;
+    margin-top: 10%;
+    box-shadow: 0px 0px 2px 1px black;
+ }
+
+ .curve-button{
+    background: rgb(16, 7, 73);
+    border: none;
+    border: 1px solid rgb(248, 248, 248);
+    padding: 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    color: rgb(161, 162, 164);
+    font-weight: lighter;
+
+    text-align: center;
+    font-size: x-large;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+ }
+/*! banner with form-floating css code */
+
+
+ @media(max-width: 768px){
+    .banner{
+      width: 100%;
+      height: 100%;
+  }
+  }
+
+
+  @media(max-width: 574px){
+    .banner{
+      width: 100%;
+      height: 100%;
+  }
+  }
+
+  @media(max-width: 825px){
+    .banner{
+      width: 100%;
+      height: 100%
+  }
+  }
+
+
+  @media(max-width: 940px){
+    .banner{
+      width: 100%;
+      height: 100%
+  }
+  }
+
+
+  @media(max-width: 1500px){
+    .banner{
+      width: 100%;
+      height: 100%
+  }
+  }
+
+/*media query for banner*/
+ 
+ 
