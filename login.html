@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand text-primary navbarBrandText" href="homepage.html"> 
+             Career <Strong class="bg-primary text-white rounded pe-3 ps-2 logoBrand">Hub</Strong>
+            </a>
+
+            <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#navbarList">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+
+            <div class="collapse navbar-collapse" id="navbarList">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link rounded" href="homepage.html">Job Search</a>
+                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded" href="#">Company profiles</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link rounded" href="#">Career advice</a>
+                    </li>
+                </ul>
+                
+                
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn rounded">Login</button>
+                    <div class="dropdown-content">
+                      <a href="#">Candidate</a>
+                      <a href="#">Employer</a>
+                    </div>
+            </div>
+            
+        </div>
+    </nav>
+    <!--End of Navbar-->
+    <div class="container logincontainer text-center py-5">
+        <h1 class="loginHeader display-3">Candidate Login</h1>
+        <div class="row">
+        <div class="col-sm-12 mt-3">
+        <button class="facebookbtn px-2 mx-1"><i class="fa-brands fa-facebook px-1"></i>Connect With Facebook</button>
+        <button class="googlebtn px-2 mx-1"><i class="fa-brands fa-google px-1"></i>Connect With Google</button>
+        </div>   
+        <div class="row">
+            <label for="staticEmail" class="col-sm-2 col-form-label"></label>
+            <label for="inputPassword" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-12">
+            <input type="text" class="form-control  px-5 my-3 emailtxtbox" id="staticEmail" value="" placeholder="Email">
+            <input type="password" class="form-control  px-5 my-3 passtxtbox" id="inputPassword" value="" placeholder="Password">
+        </div>
+        <div class="col-sm-12 px-5 py-3">
+        <div class="form-check">
+            <span class="d-flex justify-content-between">
+                <span><input class="form-check-input" type="checkbox" id="rememberMe"><label class="rememberMe-checkbox">Remember Me</label></span>
+                <a href="forgot.html" class="forgot-link">Forgot?</a>
+            </span>   
+        </div>
+         </div>
+         <div class="col-sm-12">
+            <button class="loginbtn">Login</button>
+            <p class="py-2 text-white">New User? <a href="signup.html" class="signup-link"> Sign up FREE Now</a></p>
+            <p class="py-3  text-white  terms-para">By connecting to Facebook, I have read and agreed to CareerHub.com <br>
+            Terms of Use and Privacy Policy.</p>
+         </div>
+        </div>
+       
+    </div>
+    </div>
+
+</body>
+</html>
