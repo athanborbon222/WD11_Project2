@@ -1,103 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand text-primary navbarBrandText" href="homepage.html"> 
-             Career <Strong class="bg-primary text-white rounded pe-3 ps-2 logoBrand">Hub</Strong>
-            </a>
-
-            <button class="navbar-toggler bg-light" data-bs-toggle="collapse" data-bs-target="#navbarList">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-
-            <div class="collapse navbar-collapse" id="navbarList">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link rounded" href="homepage.html">Job Search</a>
-                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link rounded" href="#">Company profiles</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link rounded" href="#">Career advice</a>
-                    </li>
-                </ul>
-                
-                
-                </div>
-                <div class="dropdown">
-                    <button class="dropbtn rounded">Login</button>
-                    <div class="dropdown-content">
-                      <a href="#">Candidate</a>
-                      <a href="#">Employer</a>
-                    </div>
-            </div>
-            
+  </head>
+  <body>
+    <!-- login -->
+    <div class="container">
+      <form class="row g-3 py-2 justify-content-end">
+        <div class="col-md-2">
+          <label for="staticEmail2" class="visually-hidden">Email</label>
+          <input
+            type="text"
+            class="form-control"
+            id="staticEmail2"
+            placeholder="Email"
+          />
         </div>
+        <div class="col-md-2">
+          <label for="inputPassword2" class="visually-hidden">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="inputPassword2"
+            placeholder="Password"
+          />
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-outline-primary mb-3">
+            login
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <!-- End login -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand text-primary navbarBrandText"
+          href="homepage.html"
+        >
+          Career
+          <strong class="bg-primary text-white rounded pe-3 ps-2 logoBrand"
+            >Hub</strong
+          >
+        </a>
+
+        <button
+          class="navbar-toggler bg-light"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarList"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarList">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link rounded" href="homepage.html">Job Search</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link rounded" href="#">Company profiles</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link rounded" href="#">Career advice</a>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn rounded">Login</button>
+          <div class="dropdown-content">
+            <a href="#">Candidate</a>
+            <a href="#">Employer</a>
+          </div>
+        </div>
+      </div>
     </nav>
     <!--End of Navbar-->
 
-   
+    <div class="container-fluid formContainer">
+      <div class="row g-0">
+        <div class="col-md-3">
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="jobTitle"
+              placeholder="JobTitle"
+            />
+            <label for="jobTitle"
+              ><i class="fa-solid fa-magnifying-glass"></i> Job title, keyword
+              or company</label
+            >
+          </div>
+        </div>
 
-      <div class="container-fluid formContainer">
-        <div class="row g-0">
-                <div class="col-md-3">
-                <div class="form-floating">
-                <input type="text" class="form-control" id="jobTitle" placeholder="JobTitle">
-                <label for="jobTitle"><i class="fa-solid fa-magnifying-glass"></i> Job title, keyword or company</label>
-                </div>
-                </div>
+        <div class="col-md-3">
+          <div class="form-floating">
+            <input
+              type="text"
+              class="form-control"
+              id="placeText"
+              placeholder="Place"
+            />
+            <label for="placeText"
+              ><i class="fa-solid fa-map-location-dot"></i> Area, City</label
+            >
+          </div>
+        </div>
 
-                    <div class="col-md-3">
-                    <div class="form-floating">
-                    <input type="text" class="form-control" id="placeText" placeholder="Place">
-                    <label for="placeText"><i class="fa-solid fa-map-location-dot"></i> Area, City</label>
-                    </div>
-                    </div>
+        <div class="col-md-3">
+          <div class="form-floating">
+            <select
+              class="form-select form-select-sm"
+              id="jobSpecialization"
+              placeholder="JobSpecialization"
+            >
+              <option>All Job Specializations</option>
+              <option>Accounting/Finance</option>
+              <option>Admin/Human Resources</option>
+              <option>Information Technology</option>
+              <option>Engineering</option>
+              <option>Hotel/Restaurant</option>
+              <option>Eductaion/Training</option>
+              <option>Sales/Marketing</option>
+            </select>
+          </div>
+        </div>
 
-                    <div class="col-md-3">
-                        <div class="form-floating">
-                            <select class="form-select form-select-sm"  id="jobSpecialization" placeholder="JobSpecialization" >
-                                <option>All Job Specializations</option>
-                                <option>Accounting/Finance</option>
-                                <option>Admin/Human Resources</option>
-                                <option>Information Technology</option>
-                                <option>Engineering</option>
-                                <option>Hotel/Restaurant</option>
-                                <option>Eductaion/Training</option>
-                                <option>Sales/Marketing</option>
-                            </select>
-                        </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <button class="curve-button">Search</button>
-                        </div>
+        <div class="col-md-3">
+          <button class="curve-button">Search</button>
         </div>
       </div>
+    </div>
 
-
-
-
-   <div class="container-fluid logosContainer">
-    <h1 class="mx-2">Top employers</h1>
-    <div class="d-flex justify-content-between flex-wrap">
+    <div class="container-fluid logosContainer">
+      <h1 class="mx-2">Top employers</h1>
+      <div class="d-flex justify-content-between flex-wrap">
         <div class="col-md-7 py-3">
+
             <img src="image/ACCENTURE.png" class="logos rounded">
             <img src="image/LSEG.jpeg" class="logos rounded">
             <img src="image/VXI.png" class="logos rounded">
@@ -106,35 +165,50 @@
             <img src="image/resorstworld.png" class="logos rounded">
             <img src="image/infosys_logo.png" class="logos rounded">
             <img src="image/teleperformance.png" class="logos rounded">
-        </div>
-        <div class="col-md-5  companydescriptionBox">
-                <div class="banner py-3 px-2">
-                    <img src="image/ACCENTURE.png" class="img-fluid w-100">
-                    <p class="mx-2 my-2 px-2 py-3">Accenture is a global professional services company with leading capabilities in digital,
-                         cloud and security. Combining unmatched experience and specialized skills across more than 40 industries,
-                          we offer Strategy and Consulting, Interactive, Technology and Operations services—all powered by the world’s 
-                          largest network of Advanced Technology and Intelligent Operations centers.
-                    </p>
-                    <div>
-                        <h3> Why join us? </h3>
-                        <p class="mx-2 my-2 px-2 py-3">Your career is about what you want to do and who you want to be. It’s about bringing your skills, 
-                            your curiosity and your best true self to work every day.
 
-                            <br><br>
-                            At Accenture, we collaborate with exceptional people across the globe, combining our ingenuity, industry expertise and the latest technology to deliver 360° 
-                            value for our clients, people and communities.
-                            
-                            <br>
-                            Here, you can harness powerful change to make a world of difference!
-                       </p>
-                    </div>
-                </div>
         </div>
+        <div class="col-md-5 companydescriptionBox">
+          <div class="banner py-3 px-2">
+            <img src="image/ACCENTURE.png" class="img-fluid w-100" />
+            <p class="mx-2 my-2 px-2 py-3">
+              Accenture is a global professional services company with leading
+              capabilities in digital, cloud and security. Combining unmatched
+              experience and specialized skills across more than 40 industries,
+              we offer Strategy and Consulting, Interactive, Technology and
+              Operations services—all powered by the world’s largest network of
+              Advanced Technology and Intelligent Operations centers.
+            </p>
+            <div>
+              <h3>Why join us?</h3>
+              <p class="mx-2 my-2 px-2 py-3">
+                Your career is about what you want to do and who you want to be.
+                It’s about bringing your skills, your curiosity and your best
+                true self to work every day.
+
+                <br /><br />
+                At Accenture, we collaborate with exceptional people across the
+                globe, combining our ingenuity, industry expertise and the
+                latest technology to deliver 360° value for our clients, people
+                and communities.
+
+                <br />
+                Here, you can harness powerful change to make a world of
+                difference!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-   </div>
-    
-    
-</body>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"
+  ></script>
 </html>
