@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- login -->
-    <div class="container">
+    <div class="container-fluid bg-primary">
       <form class="row g-3 py-2 justify-content-end">
         <div class="col-md-2">
           <label for="staticEmail2" class="visually-hidden">Email</label>
@@ -43,24 +43,24 @@
           />
         </div>
         <div class="col-auto">
-          <button type="submit" class="btn btn-outline-primary mb-3">
+          <button type="submit" class="btn btn-outline-light mb-3">
             login
           </button>
+            <button class="btn btn-outline-light mb-3">SignUp</button>
+            </div>
+          </div>
         </div>
       </form>
     </div>
-
+  
     <!-- End login -->
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
         <a
           class="navbar-brand text-primary navbarBrandText"
-          href="homepage.html"
-        >
+          href="homepage.html">
           Career
-          <strong class="bg-primary text-white rounded pe-3 ps-2 logoBrand"
-            >Hub</strong
-          >
+          <strong class="bg-primary text-white rounded pe-3 ps-2 logoBrand">Hub</strong >
         </a>
 
         <button
@@ -85,13 +85,7 @@
             </li>
           </ul>
         </div>
-        <div class="dropdown">
-          <button class="dropbtn rounded">Login</button>
-          <div class="dropdown-content">
-            <a href="#">Candidate</a>
-            <a href="#">Employer</a>
-          </div>
-        </div>
+   
       </div>
     </nav>
     <!--End of Navbar-->
@@ -113,27 +107,17 @@
           </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-3 form-column">
           <div class="form-floating">
-            <input
-              type="text"
-              class="form-control"
-              id="placeText"
-              placeholder="Place"
-            />
-            <label for="placeText"
-              ><i class="fa-solid fa-map-location-dot"></i> Area, City</label
-            >
+            <input type="text" class="form-control" id="placeText" placeholder="Place"/>
+            <label for="placeText">
+                <i class="fa-solid fa-map-location-dot"></i> Area, City</label>
           </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-3 form-column">
           <div class="form-floating">
-            <select
-              class="form-select form-select-sm"
-              id="jobSpecialization"
-              placeholder="JobSpecialization"
-            >
+            <select class="form-select form-select-sm" id="jobSpecialization" placeholder="JobSpecialization">
               <option>All Job Specializations</option>
               <option>Accounting/Finance</option>
               <option>Admin/Human Resources</option>
@@ -146,7 +130,7 @@
           </div>
         </div>
 
-        <div class="col-md-3">
+        <div class="col-md-3 form-column">
           <button class="curve-button">Search</button>
         </div>
       </div>
